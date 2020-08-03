@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-bottom: 2rem;
+
+}
+/*........................ NAVBAR STYLING.................................................. */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    z-index: 100;
+    min-height: 10vh;
+    transition: all 0.3s linear;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  .scrolled{
+    min-height: 8vh;
+    background-color: rgba(20, 18, 18, 0.99);
+  } 
+  .scrolled .link:hover{
+      color: white;
+      text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+ 
+  }
+
+
+ .logo {
+     cursor: pointer;
+     font-size: 1.6rem;
+     letter-spacing: 2px;
+     font-family: 'Noto Sans JP', sans-serif;
+     color: rgb(238, 230, 230);
+     transition: all 0.2s;
+ }
+ .logo:hover{
+    transform: scale(1.1);
+    color: white;
+    text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+
+ }
+.nav-links{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    font-weight: lighter;
+    justify-content: space-around;
+}
+.nav-links li {
+    margin-top: 10px;
+    list-style: none;
+}
+.active{
+    border: 2px solid red;
+    color: darkblue ;
+}
+.link {
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Comfortaa', cursive;
+}
+a:not([href]) {
+    color: white;
+}
+
+
+.link:hover{
+    color: darkblue;
+    cursor: pointer;
+}
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    color: white;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        background-color: rgba(20, 18, 18, 0.99);
+        height: 92vh;
+        top: 8vh;
+        width: 50%;
+        display: flex;
+        color: rgb(238, 230, 230);
+        
+        align-items: center;
+        transform: translateX(100%);
+        flex-direction: column;
+        transition: transform 0.5s ease-in;
+    }
+    .link:hover{
+       color: white;
+        text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+  
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);   
+}
+/* ......................NAVBAR STYLING COMPLETE.......................... */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+#home{
+    color: white;
+    display: flex;
+    background-position: bottom;
+    justify-content: center;
+    align-items: center;
+    z-index: -20;
+    flex-direction: column;
+}
+#home h1{
+    font-size: 3rem;
+    font-family: Comfortaa;
+    display: flex;
+    flex-direction: column;
+}
+#home span {
+    font-weight: bolder;
+    font-size: 5rem;
+    color: rgb(247, 52, 52);
+}
+#home p {
+    font-size: 2rem;
+    z-index: -1;
+}
+#home .btn{
+    outline: none;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 50px;
+}
+@media only screen and (max-width:770px){
+#home h1{
+    font-size: 2rem;
+    padding-top: 8rem;
+}
+#home span{
+    font-size: 3.5rem;
+}
+#home .btn{
+    margin: 0;
+}
+}
+/* ....................portfolio............... */
+
+.description{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.line{
+border-bottom: rgba(128, 128, 128, 0.281) 1px solid;
+
+}
+@media only screen and (max-width:990px){
+    #portfolio .flip-card{
+        margin: auto;
+    }
+}
+@media only screen and (max-width:500px){
+    #home h1{
+        font-size: 1.5rem;
+    }
+    #home span{
+        font-size: 2rem;
+    }
+    #home p{
+        font-size: 1.2rem;
+    }
+    #home .btn {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    #portfolio .flip-card-front img{
+        width: 300px;
+    }
+    #portfolio .flip-card{
+        width: 300px;
+        height: 300px;
+    }
+}
+/* .....................services.................... */
+#services{
+    display:flex;
+    border-bottom-left-radius: 1000px 2%;
+    border-bottom-right-radius: 1000px 2%;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2); 
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+}
+#services svg{
+    width: 200px;
+    fill: transparent;
+    margin: auto;
+    padding: 2rem;
+    
+}
+#services .card {
+    position: relative;
+    padding: auto;
+    margin: auto;
+    box-shadow: 22px 20px 8px -12px rgba(20, 18, 18, 0.3);
+}
+#services p{
+    color: gray;
+}
+
+#services .container{
+    padding-top: 4rem;
+    justify-content: space-between ;
+}
+#services button {
+    color: white;
+    background-color: royalblue;
+    display: flex;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    margin: 2rem auto;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+}
+#services button:hover{
+    background-color: rgb(52, 95, 224)
+}
+@media only screen and (max-width:1000px){
+    #services{
+        min-width: 62vh;
+        margin: 2rem;
+        margin: auto;
+        padding: 2rem;
+
+    }
+    /* #services .card{
+        position: relative;
+        margin: auto;
+        margin-bottom: 2rem;
+    } */
+}
+/* @media only screen and (max-width:600px){
+    #services{
+        min-width: 100vh;
+        position: relative;
+    margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+} */
+ /* @media only screen and (max-width:1000px){
+    #services{
+        min-width: 100vh;
+    }
+ } */
+
+/* ..........................contact....................... */
+
+#contact textarea:focus{
+    
+    border: 2px solid rgb(77, 3, 146);
+  
+}
+#contact input:focus{
+    
+    border: 2px solid rgb(77, 3, 146);
+  
+}
+#contact select:focus{
+    
+    border: 2px solid rgb(77, 3, 146);
+  
+}
+#contact label{
+    color: gray;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+#contact button{
+    color:white;
+    background-color:rgb(93, 6, 175);
+    border:none;
+    font-size:1rem;
+    cursor: pointer;
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+#contact button:hover{
+    background-color:rgb(99, 8, 185);
+}
+/* .....................footer...................... */
+
+
+#footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+#footer li{
+    cursor: pointer;
+    color: rgb(93, 6, 175);
+    transition: all 0.2s;
+}
+#footer li:nth-child(1):hover{
+    color: #0e76a8 ;
+    transform: scale(1.1);
+}
+#footer li:nth-child(2):hover{
+    color: #db4a39;
+    transform: scale(1.1);
+}
+#footer li:nth-child(3):hover{
+    color: #333;
+    transform: scale(1.1);
+}
+ @media only screen and (max-width:1000px){
+    #footer ul{
+        margin-top: 3rem;
+    }
+ }
