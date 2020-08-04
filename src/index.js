@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
@@ -11,3 +12,4 @@ ReactDOM.render(
 <App/>
 </BrowserRouter></>
 , document.getElementById('root'));
+serviceWorker.unregister();
