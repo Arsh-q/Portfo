@@ -18,8 +18,5 @@ export default Home;
     const Header = styled.div`
     background: url('https://cdn2.hubspot.net/hubfs/202339/canvas/images/parallax/Website-Design-Background.png')
                 no-repeat center center/cover;
-    min-height: 80vh;
-    min-width:  61vh;
-
-
+    min-height: 92vh;
     `;

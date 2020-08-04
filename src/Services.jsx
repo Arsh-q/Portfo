@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Services = () => {
     return (<>
-        <div id='services' style={{minHeight:'80vh'}}>
+        <div id='services' style={{minHeight:'auto'}}>
         <div className="container">
         <H1 className='text-center pt-0 pb-5'>Services</H1>
         <div className="row py-auto">

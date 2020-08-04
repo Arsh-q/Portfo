@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portfo/static/css/main.1a6d6c32.chunk.css",
+    "main.js": "/Portfo/static/js/main.dae79b1b.chunk.js",
+    "main.js.map": "/Portfo/static/js/main.dae79b1b.chunk.js.map",
+    "runtime-main.js": "/Portfo/static/js/runtime-main.4904c55a.js",
+    "runtime-main.js.map": "/Portfo/static/js/runtime-main.4904c55a.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/Portfo/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.86ad3444.chunk.js": "/Portfo/static/js/2.86ad3444.chunk.js",
+    "static/js/2.86ad3444.chunk.js.map": "/Portfo/static/js/2.86ad3444.chunk.js.map",
+    "index.html": "/Portfo/index.html",
+    "precache-manifest.39d9c164d49cbaaa405a3e3f543a44de.js": "/Portfo/precache-manifest.39d9c164d49cbaaa405a3e3f543a44de.js",
+    "service-worker.js": "/Portfo/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/Portfo/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.1a6d6c32.chunk.css.map": "/Portfo/static/css/main.1a6d6c32.chunk.css.map",
+    "static/js/2.86ad3444.chunk.js.LICENSE.txt": "/Portfo/static/js/2.86ad3444.chunk.js.LICENSE.txt",
+    "static/media/FlexGallery.png": "/Portfo/static/media/FlexGallery.5b259d9d.png",
+    "static/media/JSclock 1.png": "/Portfo/static/media/JSclock 1.925c5665.png",
+    "static/media/VideoPlayer.png": "/Portfo/static/media/VideoPlayer.4315dae0.png",
+    "static/media/Yelp.png": "/Portfo/static/media/Yelp.81306958.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4904c55a.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.86ad3444.chunk.js",
+    "static/css/main.1a6d6c32.chunk.css",
+    "static/js/main.dae79b1b.chunk.js"
+  ]
+}

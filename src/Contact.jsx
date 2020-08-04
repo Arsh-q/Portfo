@@ -48,7 +48,7 @@ const Contact = () => {
             </div></div>
             <div className="row">
                 <div className="col-md-5"></div>
-                    <div className="col-md-2">
+                    <div className="col-md-2 text-center">
                         <button className='btn btn-lg'>Send</button>
                     </div>
                 <div className="col-md-5"></div>                   

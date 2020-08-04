@@ -96,7 +96,7 @@ a:not([href]) {
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
     body{
         overflow-x: hidden;
     }
@@ -109,7 +109,6 @@ a:not([href]) {
         width: 50%;
         display: flex;
         color: rgb(238, 230, 230);
-        
         align-items: center;
         transform: translateX(100%);
         flex-direction: column;
@@ -205,6 +204,12 @@ a:not([href]) {
 border-bottom: rgba(128, 128, 128, 0.281) 1px solid;
 
 }
+@media only screen and (max-width:320px){
+    #portfolio .flip-card{
+        right: 25%;
+
+    }
+ }
 @media only screen and (max-width:990px){
     #portfolio .flip-card{
         margin: auto;
@@ -226,13 +231,16 @@ border-bottom: rgba(128, 128, 128, 0.281) 1px solid;
     }
 
     #portfolio .flip-card-front img{
-        width: 300px;
+        width: inherit;
     }
     #portfolio .flip-card{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
+
     }
 }
+
+
 /* .....................services.................... */
 #services{
     display:flex;
@@ -279,7 +287,6 @@ border-bottom: rgba(128, 128, 128, 0.281) 1px solid;
 }
 @media only screen and (max-width:1000px){
     #services{
-        min-width: 62vh;
         margin: 2rem;
         margin: auto;
         padding: 2rem;
@@ -354,19 +361,19 @@ border-bottom: rgba(128, 128, 128, 0.281) 1px solid;
 #footer li{
     cursor: pointer;
     color: rgb(93, 6, 175);
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 #footer li:nth-child(1):hover{
     color: #0e76a8 ;
-    transform: scale(1.1);
+    transform: translateY(-3px);
 }
 #footer li:nth-child(2):hover{
     color: #db4a39;
-    transform: scale(1.1);
+    transform: translateY(-3px);
 }
 #footer li:nth-child(3):hover{
     color: #333;
-    transform: scale(1.1);
+    transform: translateY(-3px);
 }
  @media only screen and (max-width:1000px){
     #footer ul{
