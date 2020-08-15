@@ -32,7 +32,6 @@ nav {
   .scrolled .link:hover{
       color: white;
       text-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
- 
   }
 
 
@@ -190,8 +189,9 @@ a:not([href]) {
     font-size: 3.5rem;
 }
 #home .btn{
-    margin: 0;
+    margin-top: 5rem;
 }
+
 }
 /* ....................portfolio............... */
 
@@ -204,12 +204,11 @@ a:not([href]) {
 border-bottom: rgba(128, 128, 128, 0.281) 1px solid;
 
 }
-@media only screen and (max-width:320px){
-    #portfolio .flip-card{
-        right: 25%;
+#portfolio {
+    display: flex;
+    justify-content: center;
+}
 
-    }
- }
 @media only screen and (max-width:990px){
     #portfolio .flip-card{
         margin: auto;
@@ -292,28 +291,8 @@ border-bottom: rgba(128, 128, 128, 0.281) 1px solid;
         padding: 2rem;
 
     }
-    /* #services .card{
-        position: relative;
-        margin: auto;
-        margin-bottom: 2rem;
-    } */
+
 }
-/* @media only screen and (max-width:600px){
-    #services{
-        min-width: 100vh;
-        position: relative;
-    margin: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-} */
- /* @media only screen and (max-width:1000px){
-    #services{
-        min-width: 100vh;
-    }
- } */
-
 /* ..........................contact....................... */
 
 #contact textarea:focus{
@@ -358,6 +337,10 @@ border-bottom: rgba(128, 128, 128, 0.281) 1px solid;
     justify-content: space-around;
     
 }
+a{
+    color: rgb(93, 6, 175) ;
+}
+
 #footer li{
     cursor: pointer;
     color: rgb(93, 6, 175);
@@ -372,7 +355,7 @@ border-bottom: rgba(128, 128, 128, 0.281) 1px solid;
     transform: translateY(-3px);
 }
 #footer li:nth-child(3):hover{
-    color: #333;
+    color: black;
     transform: translateY(-3px);
 }
  @media only screen and (max-width:1000px){
