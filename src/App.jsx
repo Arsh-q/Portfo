@@ -4,21 +4,41 @@ import Home from './Home';
 import Footer from './Footer';
 import styled from 'styled-components';
 import clock from './Images/JSclock 1.png';
-import gallery from './Images/FlexGallery.png';
+import weather from './Images/weather.png';
 import yelp from './Images/Yelp.png';
 import player from './Images/VideoPlayer.png';
 import Portfolio from './Portfolio';
 import Services from './Services';
+import TicTac from './Images/tictac.png';
 import Contact from './Contact';
 const App = () => {
   return (<>
         <Navbar />
         <Home />
         <H1>Portfolio</H1>
-        <Portfolio color='dodgerblue' imgsrc={clock} name='JS Clock' text='Pure HTML, CSS and Javascript' desc='A simple analog clock which works in real-time. ' />
-        <Portfolio color='#28a745' imgsrc={gallery} name='Flex Gallery' text='Pure HTML, CSS' desc='A responsive flex gallery with pure CSS.' />
-        <Portfolio color='#ffc107' imgsrc={yelp} name='YelpCamp' text='Bootstrap with Nodejs' desc='A BackEnd project using Nodejs and MongoDB. ' />
-        <Portfolio color='#dc3545' imgsrc={player} name='CSS Video Player' text='HTML, CSS and Javascript' desc='A video player with custom controls' />
+        <Portfolio link='https://5f3171f3500fded1a9a38906--zealous-babbage-8ca709.netlify.app/' color='dodgerblue' 
+        imgsrc={TicTac} 
+        name='Tic Tac Toe Game' 
+        text='Pure HTML, CSS and Javascript' 
+        desc='A simple tic tac toe game with reactjs. ' />
+        <Portfolio link='https://arsh-q.github.io/Projects/clock/clock.html'
+        color='#28a745' 
+        imgsrc={clock} 
+        name='JS Clock' 
+        text='Pure HTML, CSS and some Jacasvript'  
+        desc='A simple analog clock which works in realtime. ' />
+        <Portfolio link='https://5f2a7b72734147876c550d93--reverent-chandrasekhar-b7ea81.netlify.app/'
+        color='#dc3545' 
+        imgsrc={weather} 
+        name='Weather App' 
+        text='HTML, CSS and Reactjs' 
+        desc='A temperature app fetching data from weather api.' />
+        <Portfolio link='https://safe-springs-35331.herokuapp.com/'
+        color='#ffc107' 
+        imgsrc={yelp} 
+        name='YelpCamp' 
+        text='Bootstrap with Nodejs' 
+        desc='A BackEnd project using Nodejs and MongoDB. ' />
         <Services />
         <Contact />
         <Footer />
