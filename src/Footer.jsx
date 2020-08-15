@@ -11,9 +11,9 @@ const Footer = () => {
                 <div className="col-md-5 mx-auto">
                 
                 <ul>
-                    <li><Icon size={40} icon={linkedinSquare} /></li>
+                    <li><a href="https://www.linkedin.com/in/arsh-quayum-499208191/"><Icon size={40} icon={linkedinSquare} /></a></li>
                     <li><Icon size={40} icon={googlePlusSquare} /></li>
-                    <li><Icon size={40} icon={githubSquare} /></li>
+                    <li><a href="https://github.com/Arsh-q/webdevcamp"><Icon size={40} icon={githubSquare} /></a></li>
                 </ul>
                    
                 </div>
