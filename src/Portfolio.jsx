@@ -25,7 +25,8 @@ const Portfolio = (props) => {
             <div className='description'>
                 <h1 className='my-3'>{props.name} <span style={{backgroundColor:`${props.color}`}}> 2020</span></h1>
                 <p className='my-4'>{props.desc} </p>
-                <button style={{borderRadius:'50px',fontSize:'1rem'}} className='btn btn-lg btn-outline-primary'>Visit Project</button>
+             <a href={props.link} style={{borderRadius:'50px',fontSize:'1rem'}} className='btn btn-lg btn-outline-primary'>Visit Project</a>
+
             </div>
             </div>
             </div>
